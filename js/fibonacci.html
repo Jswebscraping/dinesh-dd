@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fibonacci Series
+        </title>
+    </head>
+  
+    <body>
+        <input type="text" number="number" id="numb">
+        <button onclick="myfunction()">Fibonacci</button>
+
+    
+    <script>
+        function myfunction() {
+
+        var number=document.getElementById("numb").value;
+        let n1=0, n2=1, nextTerm;
+
+        console.log("fibonacci is:");
+        console.log(n1);
+        console.log(n2);
+
+        nextTerm=n1+n2;
+
+        while (nextTerm <= number) {
+            console.log(nextTerm);
+
+            n1=n2;
+            n2=nextTerm;
+            nextTerm=n1+n2;
+        }
+
+         
+        }
+
+    </script>
+    
+</body>
+</html>

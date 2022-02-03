@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial Of Numbers</title>
+    </head>
+    <body>
+        <input id="numb"><br>
+        <button onclick="myfunction()">factorial</button><br>
+        <input id="factorial is">
+    </body>
+   
+    <script>
+        function myfunction() {
+           
+            var i,no,fact;
+            fact=1;
+            no=Number(document.getElementById("numb").value);
+            for(i=1; i<=no; i++)
+            {
+                fact= fact*i;
+            }
+            document.getElementById("factorial is").value=fact;
+        
+            }
+           </script>
+           
+</html>

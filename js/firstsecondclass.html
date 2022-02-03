@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>result in classes</title>
+    </head>
+    <body>
+        <p>percentage obtained by students</p>
+        <input type="text" percentage="number" id="numb">
+
+        <button onclick="myfunction()">Result</button>
+        <p id="percentage"></p>
+    </body>
+    <script>
+        function myfunction()
+        {
+            var percentage=document.getElementById("numb").value;
+
+            if(percentage>95)
+            {
+                console.log("Distinction")
+            }
+            else if(percentage>65)
+            {
+                  console.log("First Class")
+            }
+            else{
+                console.log("second class")
+            }
+        
+
+        }
+    </script>
+</html>
